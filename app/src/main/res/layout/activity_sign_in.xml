@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".SignIn">
+
+    <ImageView
+        android:id="@+id/sign_in_logo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="30dp"
+        app:srcCompat="@drawable/login" />
+
+    <TextView
+        android:id="@+id/signInHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign_in_logo"
+        android:text="LOGIN TO YOUR SEMESTER FREEZE PROTAL"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"></TextView>
+
+    <EditText
+        android:id="@+id/usernameBoxSI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/signInHeading"
+        android:hint="Enter your username">
+    </EditText>
+
+    <EditText
+        android:id="@+id/passwordBoxSI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your password"
+        android:layout_below="@+id/usernameBoxSI"
+        android:layout_marginTop="30dp">
+    </EditText>
+
+    <Button
+        android:id="@+id/btnSignInSI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/passwordBoxSI">
+    </Button>
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".SignUp">
+
+    <ImageView
+        android:id="@+id/UOGLogo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="30dp"
+        app:srcCompat="@drawable/clipart3151171" />
+
+    <TextView
+        android:id="@+id/signUpHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/UOGLogo"
+        android:text="SEMESTER FREEZE PORTAL"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"></TextView>
+
+    <EditText
+        android:id="@+id/usernameBoxSU"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signUpHeading"
+        android:layout_marginTop="20dp"
+        android:hint="Enter your username"></EditText>
+
+    <EditText
+        android:id="@+id/passwordBoxSU"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usernameBoxSU"
+        android:layout_marginTop="20dp"
+        android:hint="Enter your password"></EditText>
+
+    <EditText
+        android:id="@+id/repasswordBoxSU"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordBoxSU"
+        android:layout_marginTop="20dp"
+        android:hint="Retype your password"></EditText>
+
+    <Button
+        android:id="@+id/btnSignUpSU"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/repasswordBoxSU"
+        android:layout_marginTop="40dp"
+        android:text="Sign Up"></Button>
+
+    <Button
+        android:id="@+id/btnSignInSU"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btnSignUpSU">
+    </Button>
+
+</RelativeLayout>
